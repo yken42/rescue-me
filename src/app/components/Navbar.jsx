@@ -16,8 +16,8 @@ export const Navbar = ({ setIsOpen, isOpen }) => {
 
   return (
     <nav className="">
-      <ul className="flex justify-between items-center p-4 bg-[#fff] text-black">
-        <li className="font-bold text-2xl"><a href="/">RESCME.</a></li>
+      <ul className="flex justify-between items-center p-4 bg-[#fff] text-black md:pr-18">
+        <li className="font-bold text-2xl md:pl-18"><a href="/" >RESCME.</a></li>
         
         {/* Desktop Navigation */}
         <li className="hidden sm:flex space-x-8 space-x-reverse">
@@ -27,7 +27,7 @@ export const Navbar = ({ setIsOpen, isOpen }) => {
               e.preventDefault();
               scrollToSection('steps');
             }}
-            className="hover:text-blue-600 cursor-pointer transition-colors duration-200 font-medium"
+            className="hover:text-blue-600 cursor-pointer transition-colors duration-200 font-medium md:pr-6"
           >
             איך זה עובד
           </a>
